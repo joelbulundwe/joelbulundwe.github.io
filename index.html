@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joel Bulundwe | IT & Cybersecurity</title>
+
+    <meta name="description"
+          content="Joel Bulundwe - Information Technology student specializing in Cybersecurity.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 15, 20, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #21262d;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #8b949e;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 25px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero p:first-child {
+            color: #58a6ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 8vw, 80px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #8b949e;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+
+        .hero-description {
+            color: #8b949e;
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 12px 20px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .button.primary {
+            background: #238636;
+            border-color: #238636;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            border-color: #58a6ff;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .section-title span {
+            color: #58a6ff;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #8b949e;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #21262d;
+            background: #11161d;
+            padding: 25px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #58a6ff;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #8b949e;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 20px;
+            color: #c9d1d9;
+            background: #11161d;
+        }
+
+        .experience {
+            border-left: 2px solid #30363d;
+            padding-left: 25px;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+        }
+
+        .experience-item h3 {
+            font-size: 22px;
+        }
+
+        .experience-item .date {
+            color: #58a6ff;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .experience-item p {
+            color: #8b949e;
+        }
+
+        footer {
+            border-top: 1px solid #21262d;
+            text-align: center;
+            padding: 35px 20px;
+            color: #8b949e;
+        }
+
+        @media (max-width: 700px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">JB</div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p>HELLO, I'M</p>
+
+            <h1>Joel Bulundwe.</h1>
+
+            <h2>Information Technology & Cybersecurity</h2>
+
+            <p class="hero-description">
+                I'm an Information Technology student focused on cybersecurity,
+                networking, digital forensics, and hands-on technology.
+                I'm constantly learning, building, and breaking things
+                in order to understand how they work.
+            </p>
+
+            <div class="buttons">
+                <a class="button primary" href="#projects">
+                    View My Projects
+                </a>
+
+                <a class="button" href="#contact">
+                    Get In Touch
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <p class="about-text">
+            I'm currently studying Information Technology with a concentration
+            in Cybersecurity. My interests include computer networks,
+            system administration, digital forensics, Linux, security
+            tools, and understanding how technology can be secured.
+            <br><br>
+            This website is also part of my journey. I'll be using it to
+            document projects, experiments, certifications, and things
+            I'm learning along the way.
+        </p>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+        <div class="experience">
+
+            <div class="experience-item">
+
+                <h3>ITS Help Desk Student Assistant</h3>
+
+                <div class="date">
+                    University of North Alabama
+                </div>
+
+                <p>
+                    Provide Tier 1 technical support to students, faculty,
+                    and staff. Troubleshoot account and password issues,
+                    wireless connectivity, Microsoft Office, Canvas,
+                    Banner, and other university technology.
+                </p>
+
+            </div>
+
+
+            <div class="experience-item">
+
+                <h3>Game Room Assistant</h3>
+
+                <div class="date">
+                    University of North Alabama
+                </div>
+
+                <p>
+                    Manage gaming equipment, assist students with consoles
+                    and displays, troubleshoot technical problems, and
+                    maintain the game room's computer and equipment systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Home Network & DNS Lab</h3>
+
+                <p>
+                    Building a personal network lab using Raspberry Pi,
+                    Pi-hole, DNS, and network monitoring to better understand
+                    how devices communicate across a network.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Digital Forensics Lab</h3>
+
+                <p>
+                    Hands-on experimentation with digital forensic tools
+                    and disk analysis techniques in an isolated laboratory
+                    environment.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Cybersecurity Home Lab</h3>
+
+                <p>
+                    Developing an isolated cybersecurity environment for
+                    practicing networking, Linux administration,
+                    reconnaissance, monitoring, and security analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills">
+
+            <span class="skill">Cybersecurity</span>
+            <span class="skill">Networking</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Windows</span>
+            <span class="skill">Digital Forensics</span>
+            <span class="skill">DNS</span>
+            <span class="skill">Python</span>
+            <span class="skill">Virtual Machines</span>
+            <span class="skill">Technical Support</span>
+            <span class="skill">Troubleshooting</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Let's <span>Connect</span>
+        </h2>
+
+        <p class="about-text">
+            I'm always interested in technology, cybersecurity,
+            and opportunities to learn and build new things.
+        </p>
+
+        <br>
+
+        <div class="buttons">
+
+            <a class="button primary"
+               href="mailto:joelbulundwe@gmail.com">
+                Email Me
+            </a>
+
+            <a class="button"
+               href="https://github.com/joelbulundwe"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Joel Bulundwe.
+
+    </footer>
+
+</body>
+</html>
